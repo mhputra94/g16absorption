@@ -58,7 +58,7 @@ def convert(eV):
     lam = 1239.84193/eV
     return lam
 
-sigieV  = 0.25 # Broadening Factor in eV
+sigieV  = 0.25
 siginm  = convert(sigieV)
 sigi = 1.0/siginm
 peak = energy
@@ -92,10 +92,9 @@ UVVIS = np.array(UVVIS)
 UVVIS = np.array(UVVIS)
 peaks, _ = find_peaks(UVVIS)
 print("Peak of Absorptions are", 1239.84193/freq[peaks])
-seeb = np.array(Spektrum)
 
 
-# Plot Spectra and Oscillator Harmonic
+#Plot Spectra and Oscillator Harmonic
 
 num_renorm = 3
 plt.plot(1239.84193/freq,UVVIS/num_renorm,'b-', linewidth = 2.0)
