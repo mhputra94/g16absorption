@@ -95,7 +95,7 @@ print("Peak of Absorptions are", 1239.84193/freq[peaks])
 seeb = np.array(Spektrum)
 
 
-Plot Spectra and Oscillator Harmonic
+# Plot Spectra and Oscillator Harmonic
 
 num_renorm = 3
 plt.plot(1239.84193/freq,UVVIS/num_renorm,'b-', linewidth = 2.0)
