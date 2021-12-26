@@ -58,7 +58,7 @@ def convert(eV):
     lam = 1239.84193/eV
     return lam
 
-sigieV  = 0.25
+sigieV  = 0.25 # Broadening Factor in eV
 siginm  = convert(sigieV)
 sigi = 1.0/siginm
 peak = energy
